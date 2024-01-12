@@ -1,4 +1,3 @@
-<body>
 <div align=center>
   
   # challenG9  |  챌린지구
@@ -23,6 +22,7 @@
 <br>
 
 ## 1. 팀원
+
 <br>
 <table>
   <tr>
@@ -54,46 +54,79 @@
 <br>
 
 ## 2. 기술 및 개발 환경
+
 <br>
 
-| FrontEnd | BackEnd | Design | 협업방식 | 컨벤션 |
-| --- | --- | --- | --- | --- |
-| <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=black"> <img src="https://img.shields.io/badge/ReactNative-61DAFB?style=flat-square&logo=React&logoColor=black"> <img src="https://img.shields.io/badge/styledcomponents-CC6699?style=flat-square&logo=styledcomponents&logoColor=white"> <img src="https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=flat-square&logo=JavaScript&logoColor=black"> | <img src="https://img.shields.io/badge/RESTful API-02B550.svg?style=flat-square"> <img src="https://img.shields.io/badge/Swagger-85EA2D.svg?style=flat-square&logo=Swagger&logoColor=black">  | <img src="https://img.shields.io/badge/figma-FBCEB1?style=flat-square&logo=figma&logoColor=white"> | <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=GitHub&logoColor=white"> <img src="https://img.shields.io/badge/Notion-000000.svg?style=flat-square&logo=Notion&logoColor=white"> <img src="https://img.shields.io/badge/Discord-5865F2?style=flat-square&logo=Discord&logoColor=white"> | <img src="https://img.shields.io/badge/Prettier-F7B93E.svg?style=flat-square&logo=Prettier&logoColor=black"> |
+| FrontEnd                                                                                                                                                                                                                                                                                                                                                                                                                                              | BackEnd                                                                                                                                                                                      | Design                                                                                             | 협업방식                                                                                                                                                                                                                                                                                                             | 컨벤션                                                                                                       |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
+| <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=black"> <img src="https://img.shields.io/badge/ReactNative-61DAFB?style=flat-square&logo=React&logoColor=black"> <img src="https://img.shields.io/badge/styledcomponents-CC6699?style=flat-square&logo=styledcomponents&logoColor=white"> <img src="https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=flat-square&logo=JavaScript&logoColor=black"> | <img src="https://img.shields.io/badge/RESTful API-02B550.svg?style=flat-square"> <img src="https://img.shields.io/badge/Swagger-85EA2D.svg?style=flat-square&logo=Swagger&logoColor=black"> | <img src="https://img.shields.io/badge/figma-FBCEB1?style=flat-square&logo=figma&logoColor=white"> | <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=GitHub&logoColor=white"> <img src="https://img.shields.io/badge/Notion-000000.svg?style=flat-square&logo=Notion&logoColor=white"> <img src="https://img.shields.io/badge/Discord-5865F2?style=flat-square&logo=Discord&logoColor=white"> | <img src="https://img.shields.io/badge/Prettier-F7B93E.svg?style=flat-square&logo=Prettier&logoColor=black"> |
+
 <br>
 <br>
 
 ## 3. 미리보기
+
+<br>
+<table>
+  <tr>
+    <td><img src="https://github.com/whatever-mentoring/Dopamine_Frontend/assets/108985221/4062a7e4-6352-4a05-b439-1c46b19626ab" width="300px"></td>
+    <td><img src="https://github.com/whatever-mentoring/Dopamine_Frontend/assets/108985221/97f2c24c-367e-4d93-acf2-a05549dc8793" width="300px"></td>
+    <td><img src="https://github.com/whatever-mentoring/Dopamine_Frontend/assets/108985221/7287a229-bf98-47bb-8cbe-ef0248a5431c" width="300px"></td>
+  </tr>
+  <tr>
+    <td> 스플래시 & 로그인 </td>
+    <td> 홈탭 | 툴팁 </td>
+    <td> 마이탭 | 인증글 날짜 필터 </td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/whatever-mentoring/Dopamine_Frontend/assets/108985221/7ba04b48-0bac-42bc-a989-751953bca958" width="300px"></td>
+    <td><img src="https://github.com/whatever-mentoring/Dopamine_Frontend/assets/108985221/4c589b5a-8a51-4647-850c-38e851526163" width="300px"></td>
+  </tr>
+  <tr>
+    <td> 챌린지 인증 </td>
+    <td> 피드탭 | 좋아요 </td>
+    <td> 피드탭 | 게시물 삭제 </td>
+  </tr>
+</table>
+<br>
 <br>
 
 ## 4. 주요 기능
-<br>
-
 ### 로그인 및 회원가입
-  - 카카오 로그인 및 회원가입
-  - 닉네임 설정 및 수정
-  - 로그아웃 및 서비스 탈퇴
+
+- 카카오 로그인 및 회원가입
+- 닉네임 설정 및 수정
+- 로그아웃 및 서비스 탈퇴
+
 ### 홈
-  - 챌린지 리스트
-  - 내 경험치 정보
-  - 좋아요순 인증글 리스트
+
+- 챌린지 리스트
+- 내 경험치 정보
+- 좋아요순 인증글 리스트
+
 ### 챌린지 피드
-  - 모든 유저 인증글 리스트업
-  - 최신순/오래된순 정렬
-  - 인증글 추가
+
+- 모든 유저 인증글 리스트업
+- 최신순/오래된순 정렬
+- 인증글 추가
+
 ### 챌린지 인증
-  - 인증 사진 및 소감 작성
+
+- 인증 사진 및 소감 작성
+
 ### 마이페이지
-  - 내 경험치 정보
-  - 내 인증 기록 리스트 - 날짜 필터링
-  - 설정
-<br>
-<br>
+
+- 내 경험치 정보
+- 내 인증 기록 리스트 - 날짜 필터링
+- 설정
+  <br>
+  <br>
 
 ## 5. 핵심코드
-<br>
 
 <br>
 <br>
 
 ## 6. 트러블 슈팅
+
 <br>
