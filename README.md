@@ -69,9 +69,9 @@
 <br>
 <table>
   <tr>
-    <td><img src="https://github.com/whatever-mentoring/Dopamine_Frontend/assets/108985221/4062a7e4-6352-4a05-b439-1c46b19626ab" width="280px"></td>
-    <td><img src="https://github.com/whatever-mentoring/Dopamine_Frontend/assets/108985221/97f2c24c-367e-4d93-acf2-a05549dc8793" width="280px"></td>
-    <td><img src="https://github.com/whatever-mentoring/Dopamine_Frontend/assets/108985221/7287a229-bf98-47bb-8cbe-ef0248a5431c" width="280px"></td>
+    <td><img src="https://github.com/whatever-mentoring/Dopamine_Frontend/assets/108985221/4062a7e4-6352-4a05-b439-1c46b19626ab" width="290px"></td>
+    <td><img src="https://github.com/whatever-mentoring/Dopamine_Frontend/assets/108985221/97f2c24c-367e-4d93-acf2-a05549dc8793" width="290px"></td>
+    <td><img src="https://github.com/whatever-mentoring/Dopamine_Frontend/assets/108985221/7287a229-bf98-47bb-8cbe-ef0248a5431c" width="290px"></td>
   </tr>
   <tr>
     <td> 스플래시 & 로그인 </td>
@@ -80,8 +80,8 @@
   </tr>
 <table>
   <tr>    
-    <td><img src="https://github.com/whatever-mentoring/Dopamine_Frontend/assets/108985221/7ba04b48-0bac-42bc-a989-751953bca958" width="280px"></td>
-    <td><img src="https://github.com/whatever-mentoring/Dopamine_Frontend/assets/108985221/4c589b5a-8a51-4647-850c-38e851526163" width="280px"></td>
+    <td><img src="https://github.com/whatever-mentoring/Dopamine_Frontend/assets/108985221/7ba04b48-0bac-42bc-a989-751953bca958" width="290px"></td>
+    <td><img src="https://github.com/whatever-mentoring/Dopamine_Frontend/assets/108985221/4c589b5a-8a51-4647-850c-38e851526163" width="290px"></td>
   </tr>
   <tr>
     <td> 챌린지 인증 </td>
