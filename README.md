@@ -68,31 +68,57 @@
 
 <br>
 <table>
+  <tr align="center">
+    <td colspan="3"> 스플래시 & 홈탭 </td>
+  </tr>
+  <tr align="center">
+    <td> 로그인 </td>
+    <td> 툴팁 </td>
+    <td> 챌린지 인증 </td>
+  </tr>
   <tr>
     <td><img src="https://github.com/whatever-mentoring/Dopamine_Frontend/assets/108985221/4062a7e4-6352-4a05-b439-1c46b19626ab" width="290px"></td>
     <td><img src="https://github.com/whatever-mentoring/Dopamine_Frontend/assets/108985221/97f2c24c-367e-4d93-acf2-a05549dc8793" width="290px"></td>
-    <td><img src="https://github.com/whatever-mentoring/Dopamine_Frontend/assets/108985221/7287a229-bf98-47bb-8cbe-ef0248a5431c" width="290px"></td>
-  </tr>
-  <tr>
-    <td> 스플래시 & 로그인 </td>
-    <td> 홈탭 | 툴팁 </td>
-    <td> 마이탭 | 인증글 날짜 필터 </td>
-  </tr>
-<table>
-  <tr>    
     <td><img src="https://github.com/whatever-mentoring/Dopamine_Frontend/assets/108985221/7ba04b48-0bac-42bc-a989-751953bca958" width="290px"></td>
+  </tr>
+</table>
+
+<table>
+  <tr align="center">
+    <td colspan="3"> 피드탭 </td>
+  </tr>
+  </tr>
+  <tr align="center">
+    <td> 좋아요 </td>
+    <td> 인증기록 추가 </td>
+    <td> 인증기록 삭제 </td>
+  </tr>
+  <tr>    
     <td><img src="https://github.com/whatever-mentoring/Dopamine_Frontend/assets/108985221/4c589b5a-8a51-4647-850c-38e851526163" width="290px"></td>
+    <td><img src="https://github.com/whatever-mentoring/Dopamine_Frontend/assets/108985221/a5f93bef-2693-441c-b18e-d15039c7a4dc" width="290px"></td>
+    <td><img src="" width="290px"></td>
+</table>
+
+<table>
+  <tr align="center">
+    <td colspan="3"> 마이탭 </td>
   </tr>
-  <tr>
-    <td> 챌린지 인증 </td>
-    <td> 피드탭 | 좋아요 </td>
-    <td> 피드탭 | 게시물 삭제 </td>
   </tr>
+  <tr align="center">
+    <td> 인증기록 날짜 필터 </td>
+    <td> 인증기록 상세보기 </td>
+    <td> 설정 - 닉네임 변경 </td>
+  </tr>
+  <tr>    
+    <td><img src="https://github.com/whatever-mentoring/Dopamine_Frontend/assets/108985221/7287a229-bf98-47bb-8cbe-ef0248a5431c" width="290px"></td>
+    <td><img src="" width="290px"></td>
+    <td><img src="https://github.com/whatever-mentoring/Dopamine_Frontend/assets/108985221/28c97cdb-3980-4414-874e-5eaba29ff949" width="290px"></td>
 </table>
 <br>
 <br>
 
 ## 4. 주요 기능
+
 ### 로그인 및 회원가입
 
 - 카카오 로그인 및 회원가입
@@ -103,13 +129,13 @@
 
 - 챌린지 리스트
 - 내 경험치 정보
-- 좋아요순 인증글 리스트
+- 좋아요순 인증기록 리스트
 
 ### 챌린지 피드
 
-- 모든 유저 인증글 리스트업
+- 모든 유저 인증기록 리스트업
 - 최신순/오래된순 정렬
-- 인증글 추가
+- 인증기록 추가
 
 ### 챌린지 인증
 
