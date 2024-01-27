@@ -15,8 +15,9 @@
 
 **프로젝트 기간** 2023.08.22 - 2023.09.25<br>
 **개발 기간** 2023.09.08 - 2023.09.25<br>
-**앱스토어 링크** https://play.google.com/store/apps/details?id=com.challenG9&hl=en-KR&pli=1<br>
-**URL** https://stellular-bublanina-45de4b.netlify.app/
+~~**앱스토어 링크** https://play.google.com/store/apps/details?id=com.challenG9&hl=en-KR&pli=1<br>~~
+~~**URL** https://stellular-bublanina-45de4b.netlify.app/~~ <br>
+**현재 서버의 보안 인증서가 만료되어 사용할 수 없습니다.*
 <br>
 <br>
 <br>
