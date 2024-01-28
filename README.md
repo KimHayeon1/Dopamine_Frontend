@@ -97,7 +97,7 @@
   <tr>    
     <td><img src="https://github.com/whatever-mentoring/Dopamine_Frontend/assets/108985221/413cb770-ac79-47ab-a821-3ac39ecd52d9" width="300px"></td>
     <td><img src="https://github.com/whatever-mentoring/Dopamine_Frontend/assets/108985221/a5f93bef-2693-441c-b18e-d15039c7a4dc" width="300px"></td>
-    <td><img src="" width="300px"></td>
+    <td><img src="https://github.com/whatever-mentoring/Dopamine_Frontend/assets/108985221/cf854f7c-627a-41cb-9f34-0ff894e14200" width="300px"></td>
 </table>
 
 <table>
