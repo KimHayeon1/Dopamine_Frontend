@@ -78,8 +78,8 @@
     <td> 챌린지 인증 </td>
   </tr>
   <tr>
-    <td><img src="https://github.com/whatever-mentoring/Dopamine_Frontend/assets/108985221/4062a7e4-6352-4a05-b439-1c46b19626ab" width="290px"></td>
-    <td><img src="https://github.com/whatever-mentoring/Dopamine_Frontend/assets/108985221/97f2c24c-367e-4d93-acf2-a05549dc8793" width="290px"></td>
+    <td><img src="https://github.com/whatever-mentoring/Dopamine_Frontend/assets/108985221/361bd105-c2df-44fd-8574-49c2c67f89dc" width="290px"></td>
+    <td><img src="https://github.com/whatever-mentoring/Dopamine_Frontend/assets/108985221/617fe233-8599-4930-b0f6-7c5722c219be" width="290px"></td>
     <td><img src="https://github.com/whatever-mentoring/Dopamine_Frontend/assets/108985221/7ba04b48-0bac-42bc-a989-751953bca958" width="290px"></td>
   </tr>
 </table>
@@ -95,7 +95,7 @@
     <td> 인증기록 삭제 </td>
   </tr>
   <tr>    
-    <td><img src="https://github.com/whatever-mentoring/Dopamine_Frontend/assets/108985221/4c589b5a-8a51-4647-850c-38e851526163" width="290px"></td>
+    <td><img src="https://github.com/whatever-mentoring/Dopamine_Frontend/assets/108985221/413cb770-ac79-47ab-a821-3ac39ecd52d9" width="290px"></td>
     <td><img src="https://github.com/whatever-mentoring/Dopamine_Frontend/assets/108985221/a5f93bef-2693-441c-b18e-d15039c7a4dc" width="290px"></td>
     <td><img src="" width="290px"></td>
 </table>
