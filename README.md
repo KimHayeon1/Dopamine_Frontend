@@ -107,13 +107,11 @@
   </tr>
   <tr align="center">
     <td> 인증기록 날짜 필터 </td>
-    <td> 인증기록 상세보기 </td>
     <td> 설정 - 닉네임 변경 </td>
   </tr>
   <tr>    
-    <td><img src="https://github.com/whatever-mentoring/Dopamine_Frontend/assets/108985221/7287a229-bf98-47bb-8cbe-ef0248a5431c" width="249px"></td>
-    <td><img src="" width="249px"></td>
-    <td><img src="https://github.com/whatever-mentoring/Dopamine_Frontend/assets/108985221/28c97cdb-3980-4414-874e-5eaba29ff949" width="249px"></td>
+    <td><img src="https://github.com/whatever-mentoring/Dopamine_Frontend/assets/108985221/d966fd32-c218-4bb4-bd9f-0f0461fc4a9d" width="249px"></td>
+    <td><img src="https://github.com/whatever-mentoring/Dopamine_Frontend/assets/108985221/5b70bfe7-5ebc-496a-aadb-7149aae71dc7" width="249px"></td>
 </table>
 <br>
 <br>
