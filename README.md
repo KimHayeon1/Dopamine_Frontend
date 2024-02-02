@@ -78,9 +78,9 @@
     <td> 챌린지 인증 </td>
   </tr>
   <tr>
-    <td><img src="https://github.com/whatever-mentoring/Dopamine_Frontend/assets/108985221/361bd105-c2df-44fd-8574-49c2c67f89dc" width="274px"></td>
-    <td><img src="https://github.com/whatever-mentoring/Dopamine_Frontend/assets/108985221/617fe233-8599-4930-b0f6-7c5722c219be" width="274px"></td>
-    <td><img src="https://github.com/whatever-mentoring/Dopamine_Frontend/assets/108985221/ebd2d95d-2424-426f-906c-344efc81f557" width="274px"></td>
+    <td><img src="https://github.com/whatever-mentoring/Dopamine_Frontend/assets/108985221/361bd105-c2df-44fd-8574-49c2c67f89dc" width="265px"></td>
+    <td><img src="https://github.com/whatever-mentoring/Dopamine_Frontend/assets/108985221/617fe233-8599-4930-b0f6-7c5722c219be" width="265px"></td>
+    <td><img src="https://github.com/whatever-mentoring/Dopamine_Frontend/assets/108985221/ebd2d95d-2424-426f-906c-344efc81f557" width="265px"></td>
   </tr>
 </table>
 
@@ -95,9 +95,9 @@
     <td> 인증기록 삭제 </td>
   </tr>
   <tr>    
-    <td><img src="https://github.com/whatever-mentoring/Dopamine_Frontend/assets/108985221/413cb770-ac79-47ab-a821-3ac39ecd52d9" width="274px"></td>
-    <td><img src="https://github.com/whatever-mentoring/Dopamine_Frontend/assets/108985221/a5f93bef-2693-441c-b18e-d15039c7a4dc" width="274px"></td>
-    <td><img src="https://github.com/whatever-mentoring/Dopamine_Frontend/assets/108985221/cf854f7c-627a-41cb-9f34-0ff894e14200" width="274px"></td>
+    <td><img src="https://github.com/whatever-mentoring/Dopamine_Frontend/assets/108985221/413cb770-ac79-47ab-a821-3ac39ecd52d9" width="265px"></td>
+    <td><img src="https://github.com/whatever-mentoring/Dopamine_Frontend/assets/108985221/a5f93bef-2693-441c-b18e-d15039c7a4dc" width="265px"></td>
+    <td><img src="https://github.com/whatever-mentoring/Dopamine_Frontend/assets/108985221/cf854f7c-627a-41cb-9f34-0ff894e14200" width="265px"></td>
 </table>
 
 <table>
@@ -111,9 +111,9 @@
     <td> 설정 - 닉네임 변경 </td>
   </tr>
   <tr>    
-    <td><img src="https://github.com/whatever-mentoring/Dopamine_Frontend/assets/108985221/7287a229-bf98-47bb-8cbe-ef0248a5431c" width="274px"></td>
-    <td><img src="" width="274px"></td>
-    <td><img src="https://github.com/whatever-mentoring/Dopamine_Frontend/assets/108985221/28c97cdb-3980-4414-874e-5eaba29ff949" width="274px"></td>
+    <td><img src="https://github.com/whatever-mentoring/Dopamine_Frontend/assets/108985221/7287a229-bf98-47bb-8cbe-ef0248a5431c" width="265px"></td>
+    <td><img src="" width="265px"></td>
+    <td><img src="https://github.com/whatever-mentoring/Dopamine_Frontend/assets/108985221/28c97cdb-3980-4414-874e-5eaba29ff949" width="265px"></td>
 </table>
 <br>
 <br>
