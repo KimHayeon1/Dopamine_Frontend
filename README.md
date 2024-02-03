@@ -148,7 +148,60 @@
   <br>
   <br>
 
-## 5. 핵심코드
+## 5. 핵심 로직
+### 인증글 업로드
+**사용 흐름**
+1. 홈/챌린지 피드 - 챌린지 선택
+2. 홈/챌린지 피드 - 인증 사진 선택
+3. 인증 페이지 - 사진 재선택 및 후기글 입력 가능. 인증하기 
+<br>
+
+**요구 사항**
+- 홈/챌린지 피드에서 선택한 챌린지, 인증 사진 데이터가 인증 페이지에 전달돼야 한다. <br>
+각 페이지 간 부모는 app.jsx밖에 없기 때문에, 전역 상태 관리 필요.
+
+```js
+// ChallengeContext.js 일부
+export const ChallengeContext = createContext({
+  challengeList: [],
+  selectedChallengeIndex: null,
+  imgList: [], // 선택한 이미지
+  setChallengeList: () => {},
+  setSelectedChallengeIndex: () => {},
+  setImgList: () => {},
+});
+```
+*여러 페이지에서 챌린지 리스트 필요. 같은 데이터를 반복적으로 불러오지 않기 위해, 챌린지 리스트 또한 전역으로 관리.
+<br>
+<br>
+
+- setImgList 사용법
+```js
+// 사진 선택 모달
+setImgList(e.target.files);
+```
+<br>
+
+- imgList를 이미지로 렌더링
+```js
+// 인증 페이지
+
+const imageList = [];
+
+[...imgList].forEach((file, i) => {
+  const reader = new FileReader();
+  reader.readAsDataURL(file);
+
+  reader.addEventListener('load', ({ target }) => {
+    const image = new Image();
+    image.src = target.result;
+    imageList.push(target.result);
+
+    if (i === imgList.length - 1) {
+      setSelectedImages(imageList); // 캐러셀 이미지 src 리스트
+    }
+  });
+```
 
 <br>
 <br>
