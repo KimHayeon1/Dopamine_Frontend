@@ -145,8 +145,8 @@
 - 내 경험치 정보
 - 내 인증 기록 리스트 - 날짜 필터링
 - 설정
-  <br>
-  <br>
+<br>
+<br>
 
 ## 5. 핵심 로직
 <details>
@@ -251,4 +251,23 @@
 
 ## 6. 트러블 슈팅
 
+<details>
+  <summary><h3>카카오 로그인</h3></summary>
+  
+  #### 1. 카카오 로그인 시, 서버 주소로 이동되어 돌아오지 않는 버그
+  - **해결**
+    - 카카오 디벨로퍼스 Redirect URI에 인가 코드를 전달받을 프론트 주소를 추가
+    - 코드에서 REDIRECT_URI 값 변경
+  <br>
+  
+  #### 2. cors 에러
+  <details>
+    <summary>에러 스크린샷</summary>
+     <img src="https://github.com/KimHayeon1/Dopamine_Frontend/assets/108985221/e8ca8d86-b9d6-4fc0-84e2-3e098dceee64" width="500px">
+     <img src="https://github.com/KimHayeon1/Dopamine_Frontend/assets/108985221/3d338e97-1f52-4a0c-8817-16432cc500da" width="500px">
+  </details>
+  
+  - **해결**
+  <br>
+</details>
 <br>
