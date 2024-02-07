@@ -221,7 +221,7 @@
   ◾ 카카오 로그인 버튼 클릭 시, 로그인 화면으로 이동
   ```js
     const REST_API_KEY = import.meta.env.VITE_APP_REST_API_KEY;
-    const REDIRECT_URI = import.meta.env.VITE_APP_REDIRECT_URI;
+    const REDIRECT_URI = import.meta.env.VITE_APP_REDIRECT_URI; // 프론트 주소여야 한다.
     const link = `https://kauth.kakao.com/oauth/authorize?client_id=${REST_API_KEY}&redirect_uri=${REDIRECT_URI}&response_type=code`;
     const loginHandler = (e) => {
       e.preventDefault();
