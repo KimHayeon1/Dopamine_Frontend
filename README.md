@@ -151,10 +151,11 @@
 ## 5. 핵심 로직
 <details>
   <summary><h3>인증글 업로드</h3></summary>
+  
   **사용 흐름**
-  1. 홈/챌린지 피드 - 챌린지 선택
-  2. 홈/챌린지 피드 - 인증 사진 선택
-  3. 인증 페이지 - 사진 재선택 및 후기글 입력 가능. 인증하기 
+  1. 홈/피드탭 -  챌린지 선택
+  2. 홈/피드탭 - 인증 사진 선택
+  3. 인증 화면 - 사진 재선택 및 후기글 입력 가능. 인증하기 
   <br>
   
   **요구 사항**
@@ -162,15 +163,15 @@
   각 페이지 간 부모는 app.jsx밖에 없기 때문에, 전역 상태 관리 필요.
   
   ```js
-  // ChallengeContext.js 일부
-  export const ChallengeContext = createContext({
-    challengeList: [],
-    selectedChallengeIndex: null,
-    imgList: [], // 선택한 이미지
-    setChallengeList: () => {},
-    setSelectedChallengeIndex: () => {},
-    setImgList: () => {},
-  });
+    // ChallengeContext.js 일부
+    export const ChallengeContext = createContext({
+      challengeList: [],
+      selectedChallengeIndex: null,
+      imgList: [], // 선택한 이미지
+      setChallengeList: () => {},
+      setSelectedChallengeIndex: () => {},
+      setImgList: () => {},
+    });
   ```
   *여러 페이지에서 챌린지 리스트 필요. 같은 데이터를 반복적으로 불러오지 않기 위해, 챌린지 리스트 또한 전역으로 관리.
   <br>
@@ -178,86 +179,72 @@
   
   - setImgList 사용법
   ```js
-  // 사진 선택 모달
-  setImgList(e.target.files);
+    // 사진 선택 모달
+    setImgList(e.target.files);
   ```
   <br>
   
   - imgList를 이미지로 렌더링
   ```js
-  // 인증 페이지
-  
-  const imageList = [];
-  
-  [...imgList].forEach((file, i) => {
-    const reader = new FileReader();
-    reader.readAsDataURL(file);
-  
-    reader.addEventListener('load', ({ target }) => {
-      const image = new Image();
-      image.src = target.result;
-      imageList.push(target.result);
-  
-      if (i === imgList.length - 1) {
-        setSelectedImages(imageList); // 캐러셀 이미지 src 리스트
-      }
+    // 인증 페이지
+    
+    const imageList = [];
+    
+    [...imgList].forEach((file, i) => {
+      const reader = new FileReader();
+      reader.readAsDataURL(file);
+    
+      reader.addEventListener('load', ({ target }) => {
+        const image = new Image();
+        image.src = target.result;
+        imageList.push(target.result);
+    
+        if (i === imgList.length - 1) {
+          setSelectedImages(imageList); // 캐러셀 이미지 src 리스트
+        }
+      });
     });
   ```
 </details>
 <details>
-  <summary><h3>인증글 업로드</h3></summary>
-  **사용 흐름**
-  1. 홈/챌린지 피드 - 챌린지 선택
-  2. 홈/챌린지 피드 - 인증 사진 선택
-  3. 인증 페이지 - 사진 재선택 및 후기글 입력 가능. 인증하기 
+  <summary><h3>카카오 로그인</h3></summary>
+  
+  **로그인 흐름**
+  1. 스플래시 화면 - 카카오 로그인 버튼 클릭
+  2. 카카오 로그인 화면 - 카카오 계정 로그인 -> 동의하고 시작하기
+  3. 홈탭 (기존 회원)<br>
+     이름 설정 화면 -> 홈탭 (신규 회원)
   <br>
   
-  **요구 사항**
-  - 홈/챌린지 피드에서 선택한 챌린지, 인증 사진 데이터가 인증 페이지에 전달돼야 한다. <br>
-  각 페이지 간 부모는 app.jsx밖에 없기 때문에, 전역 상태 관리 필요.
-  
+  **코드**
+  1. 카카오 인증 서버로 인가 코드 받기를 요청<br>
+  ◾ 카카오 로그인 버튼 클릭 시, 로그인 화면으로 이동
   ```js
-  // ChallengeContext.js 일부
-  export const ChallengeContext = createContext({
-    challengeList: [],
-    selectedChallengeIndex: null,
-    imgList: [], // 선택한 이미지
-    setChallengeList: () => {},
-    setSelectedChallengeIndex: () => {},
-    setImgList: () => {},
-  });
-  ```
-  *여러 페이지에서 챌린지 리스트 필요. 같은 데이터를 반복적으로 불러오지 않기 위해, 챌린지 리스트 또한 전역으로 관리.
-  <br>
-  <br>
-  
-  - setImgList 사용법
-  ```js
-  // 사진 선택 모달
-  setImgList(e.target.files);
+    const REST_API_KEY = import.meta.env.VITE_APP_REST_API_KEY;
+    const REDIRECT_URI = import.meta.env.VITE_APP_REDIRECT_URI;
+    const link = `https://kauth.kakao.com/oauth/authorize?client_id=${REST_API_KEY}&redirect_uri=${REDIRECT_URI}&response_type=code`;
+    const loginHandler = (e) => {
+      e.preventDefault();
+      window.location.href = link;
+    };
   ```
   <br>
   
-  - imgList를 이미지로 렌더링
+  2. 카카오 인증 서버로부터 Redirect URI로 인가 코드를 전달받음<br>
+  ◾ 사용자가 카카오 계정 로그인, 동의하고 시작하기까지 완료하면, REDIRECT_URI로 이동됨
+  <br>
+  
+  3. 서버로 인가 코드 보내기(GET)
   ```js
-  // 인증 페이지
-  
-  const imageList = [];
-  
-  [...imgList].forEach((file, i) => {
-    const reader = new FileReader();
-    reader.readAsDataURL(file);
-  
-    reader.addEventListener('load', ({ target }) => {
-      const image = new Image();
-      image.src = target.result;
-      imageList.push(target.result);
-  
-      if (i === imgList.length - 1) {
-        setSelectedImages(imageList); // 캐러셀 이미지 src 리스트
-      }
-    });
+    // Redirection 컴포넌트
+    const code = new URL(window.location.href).searchParams.get('code');
+    const res = await login(code); // login 함수 src/api/jwt.js 참고
   ```
+  <br>
+  
+  4. 서버로부터 사용자 정보를 받음<br>
+  ◾ nickname 값이 null이라면 이름 설정 화면으로 이동함. 이름 설정 완료 후 홈으로 이동<br>
+  ◾ nickname 값이 null이 아니라면 홈으로 이동
 </details>
 <br>
 <br>
