@@ -245,6 +245,28 @@
   ◾ nickname 값이 null이 아니라면 홈으로 이동
 </details>
 <details>
+  <summary><h3>Swiper 패키지</h3></summary>
+  - 빠른 개발을 위해 Swiper 패키지 활용
+  
+  **코드**
+  - spaceBetween : 아이템 간격(px)
+  - slidesPerView : 한 번에 보여질 슬라이드 수
+  ```js
+    <Swiper
+      className="swiper-frame"
+      spaceBetween={10}
+      slidesPerView={2.46}
+    >
+      {feedList.map((feed, i) => {
+        return (
+          <SwiperSlide key={i} className="swiper-item">
+            (중략)
+          </SwiperSlide>
+        );
+      })}
+  ```
+</details>
+<details>
   <summary><h3>토스트 - 전역 상태</h3></summary>
   
   **토스트 알림 흐름**
