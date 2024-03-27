@@ -34,8 +34,6 @@ function MissionCertification() {
       reader.readAsDataURL(file);
 
       reader.addEventListener('load', ({ target }) => {
-        const image = new Image();
-        image.src = target.result;
         imageList.push(target.result);
         if (i === imgList.length - 1) {
           setSelectedImages(imageList);
