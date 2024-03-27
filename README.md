@@ -253,18 +253,19 @@
 <details>
   <summary><h3>카카오 로그인</h3></summary>
   
-  **1. 카카오 로그인 시, 서버 주소로 이동되어 돌아오지 않는 버그**
+  **상황**
+  - 카카오 로그인 시, 서버 주소로 이동되어 돌아오지 않는다.
   - **해결**
     - 카카오 디벨로퍼스 Redirect URI에 인가 코드를 전달받을 프론트 주소를 추가
     - 코드에서 REDIRECT_URI 값 변경
-  <br>
+</details>
+
+<details>
+  <summary><h3>CORS</h3></summary>
   
-  **2. cors 에러**
-  <details>
-    <summary>에러 스크린샷</summary>
-     <img src="https://github.com/KimHayeon1/Dopamine_Frontend/assets/108985221/e8ca8d86-b9d6-4fc0-84e2-3e098dceee64" width="600px">
-  </details>
-  
+  - **상황**
+    <br>
+    <img src="https://github.com/KimHayeon1/Dopamine_Frontend/assets/108985221/e8ca8d86-b9d6-4fc0-84e2-3e098dceee64" width="600px">
   - **해결**
     - 백엔드 개발자와 상황을 공유한 후, 백엔드 측에서 헤더를 설정하여 해결
   <br>
@@ -279,6 +280,21 @@
     - 백엔드 측에서 인증서를 발급하여 해결
     - 인증서가 발급될 때까지, 웹사이트 설정을 바꿔 임시로 해결
       (설정 -> 개인 정보 보호 및 보안 -> 안전하지 않은 콘텐츠 : 허용)
+  <br>
+</details>
+
+<details>
+  <summary><h3>Netlify - Page Not Found</h3></summary>
+  
+  - **상황**
+    - 루트(/)가 아닌 페이지에 접속하면 Page Not Found 에러 발생
+  - **원인**
+    - React Router는 client에서 라우팅을 처리하기 때문에, 루트가 아닌 페이지에 접속할 때 netlify server는 해당 경로를 처리하는 방법을 알 수 없다.
+  - **해결**
+    - 루트가 아닌 페이지에서도 index.html을 반환하도록 public/_redirects 파일 추가
+  ```js
+    */ index.html 200
+  ```
   <br>
 </details>
 <br>
