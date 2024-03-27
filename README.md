@@ -150,9 +150,9 @@
 
 ## 5. 핵심 로직
 <details>
-  <summary><h3>인증글 업로드</h3></summary>
+  <summary><h3>챌린지 인증</h3></summary>
   
-  **사용 흐름**
+  **챌린지 인증 흐름**
   1. 홈/피드탭 -  챌린지 선택
   2. 홈/피드탭 - 인증 사진 선택
   3. 인증 화면 - 사진 재선택 및 후기글 입력 가능. 인증하기 
@@ -186,7 +186,7 @@
   
   - imgList를 이미지로 렌더링
   ```js
-    // 인증 페이지
+    // src/pages/mission/MissionCertification.jsx
     
     const imageList = [];
     
@@ -195,8 +195,6 @@
       reader.readAsDataURL(file);
     
       reader.addEventListener('load', ({ target }) => {
-        const image = new Image();
-        image.src = target.result;
         imageList.push(target.result);
     
         if (i === imgList.length - 1) {
