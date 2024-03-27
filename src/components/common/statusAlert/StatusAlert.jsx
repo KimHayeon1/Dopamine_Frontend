@@ -12,7 +12,7 @@ const StatusAlert = ({ success, message, setRenderStatus }) => {
 
   return (
     <StyledDiv
-      img={success === 'true' ? successTrue : successFalse}
+      img={success ? successTrue : successFalse}
       role="alert"
     >
       {message}
