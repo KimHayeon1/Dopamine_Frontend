@@ -246,7 +246,9 @@
 </details>
 <details>
   <summary><h3>Swiper 패키지</h3></summary>
+  
   - 빠른 개발을 위해 Swiper 패키지 활용
+  <br>
   
   **코드**
   - spaceBetween : 아이템 간격(px)
@@ -267,17 +269,17 @@
   ```
 </details>
 <details>
-  <summary><h3>토스트 - 전역 상태</h3></summary>
+  <summary><h3>토스트</h3></summary>
   
   **토스트 알림 흐름**
   - 회원가입에 성공한 경우
-    -> 홈탭에서 토스트 알림
+    -> 홈탭에서 토스트 표시
   - 인증 페이지에서 인증에 실패한 경우
-    -> 홈탭에서 토스트 알림
+    -> 홈탭에서 토스트 표시
   <br>
   
   **코드**
-  - 위와 같이 동작과 피드백이 서로 다른 페이지에서 발생하는 경우, 전역 상태를 사용했다.
+  - 위와 같이 동작과 피드백이 서로 다른 페이지에서 발생하는 경우, 전역 상태 사용
   ```js
     // StatusContext.js
     export const StatusContext = createContext({
@@ -298,7 +300,7 @@
       ></StatusAlert>
     ) : null}
   ```
-
+  - role 속성을 통해 스크린리더에서 바로 읽히도록 하여 접근성 향상
   ```js
   // StatusAlert.jsx
   const StatusAlert = ({ success, message, setRenderStatus }) => {
