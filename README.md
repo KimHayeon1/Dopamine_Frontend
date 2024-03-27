@@ -154,17 +154,17 @@
   <summary><h3>챌린지 인증</h3></summary>
   
   **챌린지 인증 흐름**
-  1. 홈/피드탭 -  챌린지 선택
+  1. 홈/피드탭 - 챌린지 선택
   2. 홈/피드탭 - 인증 사진 선택
   3. 인증 화면 - 사진 재선택 및 후기글 입력 가능. 인증하기 
   <br>
   
-  **요구 사항**
-  - 홈/챌린지 피드에서 선택한 챌린지, 인증 사진 데이터가 인증 페이지에 전달돼야 한다. <br>
-  각 페이지 간 부모는 app.jsx밖에 없기 때문에, 전역 상태 관리 필요.
+  **코드**
+  - 홈/챌린지 피드에서 선택한 챌린지, 인증 사진 정보가 인증 페이지에 전달돼야 한다.<br>
+    각 페이지 간 부모는 app.jsx밖에 없기 때문에, 전역 상태를 활용했다.
   
   ```js
-    // ChallengeContext.js 일부
+    // ChallengeContext.js
     export const ChallengeContext = createContext({
       challengeList: [],
       selectedChallengeIndex: null,
@@ -174,7 +174,6 @@
       setImgList: () => {},
     });
   ```
-  *여러 페이지에서 챌린지 리스트 필요. 같은 데이터를 반복적으로 불러오지 않기 위해, 챌린지 리스트 또한 전역으로 관리.
   <br>
   <br>
   
@@ -244,6 +243,59 @@
   4. 서버로부터 사용자 정보를 받음<br>
   ◾ nickname 값이 null이라면 이름 설정 화면으로 이동함. 이름 설정 완료 후 홈으로 이동<br>
   ◾ nickname 값이 null이 아니라면 홈으로 이동
+</details>
+<details>
+  <summary><h3>토스트 - 전역 상태</h3></summary>
+  
+  **토스트 알림 흐름**
+  - 회원가입에 성공한 경우
+    -> 홈탭에서 토스트 알림
+  - 인증 페이지에서 인증에 실패한 경우
+    -> 홈탭에서 토스트 알림
+  <br>
+  
+  **코드**
+  - 위와 같이 동작과 피드백이 서로 다른 페이지에서 발생하는 경우, 전역 상태를 사용했다.
+  ```js
+    // StatusContext.js
+    export const StatusContext = createContext({
+      renderJoinStatus: false,
+      setRenderJoinStatus: () => {},
+      renderChallengeStatus: false,
+      setRenderChallengeStatus: () => {},
+    });
+  ```
+
+  ```js
+    // Home.jsx
+    {renderJoinStatus ? (
+      <StatusAlert
+        success={true}
+        message="회원가입이 완료되었어요."
+        setRenderStatus={setRenderJoinStatus}
+      ></StatusAlert>
+    ) : null}
+  ```
+
+  ```js
+  // StatusAlert.jsx
+  const StatusAlert = ({ success, message, setRenderStatus }) => {
+    useEffect(() => {
+      setTimeout(() => {
+        setRenderStatus(false);
+      }, 6000);
+    }, []);
+  
+    return (
+      <StyledDiv
+        img={success ? successTrue : successFalse}
+        role="alert"
+      >
+        {message}
+      </StyledDiv>
+    );
+  };
+  ```
 </details>
 <br>
 <br>
