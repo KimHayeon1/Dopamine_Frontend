@@ -263,10 +263,22 @@
   <details>
     <summary>에러 스크린샷</summary>
      <img src="https://github.com/KimHayeon1/Dopamine_Frontend/assets/108985221/e8ca8d86-b9d6-4fc0-84e2-3e098dceee64" width="600px">
-     <img src="https://github.com/KimHayeon1/Dopamine_Frontend/assets/108985221/3d338e97-1f52-4a0c-8817-16432cc500da" width="600px">
   </details>
   
   - **해결**
+    - 백엔드 개발자와 상황을 공유한 후, 백엔드 측에서 헤더를 설정하여 해결
+  <br>
+</details>
+
+<details>
+  <summary><h3>Mixed Content</h3></summary>
+  
+  - **원인**
+    - HTTPS를 사용하는 웹사이트에서 HTTP를 사용하는 백엔드 서버로 요청을 보냈기 때문
+  - **해결**
+    - 백엔드 측에서 인증서를 발급하여 해결
+    - 인증서가 발급될 때까지, 웹사이트 설정을 바꿔 임시로 해결
+      (설정 -> 개인 정보 보호 및 보안 -> 안전하지 않은 콘텐츠 : 허용)
   <br>
 </details>
 <br>
