@@ -83,14 +83,14 @@ const Home = () => {
         <h1 className="a11y-hidden">challenG9 | 홈</h1>
         {renderJoinStatus ? (
           <StatusAlert
-            success="true"
+            success={true}
             message="회원가입이 완료되었어요."
             setRenderStatus={setRenderJoinStatus}
           ></StatusAlert>
         ) : null}
         {renderChallengeStatus ? (
           <StatusAlert
-            success="false"
+            success={false}
             message="챌린지 인증에 실패했어요."
             setRenderStatus={setRenderChallengeStatus}
           ></StatusAlert>
