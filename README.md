@@ -289,17 +289,8 @@
       setRenderChallengeStatus: () => {},
     });
   ```
-
-  ```js
-    // Home.jsx
-    {renderJoinStatus ? (
-      <StatusAlert
-        success={true}
-        message="회원가입이 완료되었어요."
-        setRenderStatus={setRenderJoinStatus}
-      ></StatusAlert>
-    ) : null}
-  ```
+  <br>
+  
   - role 속성을 통해 스크린리더에서 바로 읽히도록 하여 접근성 향상
   ```js
   // StatusAlert.jsx
