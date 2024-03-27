@@ -271,7 +271,7 @@
 </details>
 
 <details>
-  <summary><h3>Mixed Content</h3></summary>
+  <summary><h3>Mixed Content</h3></summary>
   
   - **원인**
     - HTTPS를 사용하는 웹사이트에서 HTTP를 사용하는 백엔드 서버로 요청을 보냈기 때문
